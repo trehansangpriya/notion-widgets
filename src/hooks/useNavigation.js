@@ -21,7 +21,6 @@ const useNavigation = () => {
         }
             , {})
         setProperties(queryParams)
-        console.log(queryParams)
     }, [router.query, setProperties])
     return {
         router,

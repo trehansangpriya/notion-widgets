@@ -1,15 +1,11 @@
 import React from 'react'
-import getCurrentTime from '@/Functions/datetime/getCurrentTime'
-import getCurrentDate from '@/Functions/datetime/getCurrentDate'
 import useWidgetContext from '@/Context/WidgetContext'
+import useDatetime from '@/Functions/useDatetime'
 
 const MinimalClock = () => {
-  const { time } = getCurrentTime()
-  const { date } = getCurrentDate()
+  const { date, time } = useDatetime()
   const { properties } = useWidgetContext()
   const { timefont, datefont } = properties
-  console.log(timefont)
-  console.log(datefont)
   return (
     <div id="clock">
       <div className={[

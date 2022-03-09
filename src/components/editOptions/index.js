@@ -11,11 +11,11 @@ export const Theme = () => {
             </h2>
             <div className="flex gap-2">
                 <button className={[
-                    'w-full rounded border-2 py-2 px-4',
+                    'w-full rounded border-2 py-2 px-4 font-button',
                     theme === light && 'bg-gray-100 text-gray-800',
                 ].join(' ')} onClick={() => setTheme(light)}>Light</button>
                 <button className={[
-                    'w-full rounded border-2 py-2 px-4',
+                    'w-full rounded border-2 py-2 px-4 font-button',
                     theme === dark && 'bg-gray-100 text-gray-800',
                 ].join(' ')} onClick={() => setTheme(dark)}>Dark</button>
             </div>

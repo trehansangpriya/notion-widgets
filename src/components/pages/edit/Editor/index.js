@@ -23,7 +23,7 @@ const WidgetEditor = ({ editOptions }) => {
         setQueryParams(params.join('&'))
     }, [properties])
     return (
-        <div className='w-1/3 p-4'>
+        <div className='w-1/3 h-full p-4 border-r'>
             {editOptions}
             <div>
                 <input

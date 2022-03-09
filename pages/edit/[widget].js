@@ -23,7 +23,7 @@ const EditWidget = () => {
     return (
         <div className='w-full overflow-hidden'>
             <EditTopBar widget={widgetName} />
-            <div className="flex w-full h-[92vh]">
+            <div className="flex w-full h-[90vh] items-center">
                 <WidgetEditor editOptions={editOptions} />
                 <WidgetViewer widget={widget} />
             </div>
