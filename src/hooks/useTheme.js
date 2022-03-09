@@ -20,9 +20,12 @@ const useTheme = () => {
                 setTheme(light)
             }
         }
-        setThemeName(theme === light ? 'light' : 'dark')
+
         // eslint-disable-next-line react-hooks/exhaustive-deps
-    }, [router.query.theme, theme])
+    }, [router.query.theme])
+    useEffect(() => {
+        setThemeName(theme === light ? 'light' : 'dark')
+    }, [theme])
     return {
         toggleTheme,
         light,
