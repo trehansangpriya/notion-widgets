@@ -5,11 +5,14 @@ import useTheme from '@/Hooks/useTheme'
 import { CopyToClipboard } from 'react-copy-to-clipboard'
 
 const WidgetEditor = ({ editOptions }) => {
+    const prod = 'https://trehans-widgets.vercel.app/'
+    const dev = 'http://localhost:3000/'
+    const enviroment = process.env.NODE_ENV === 'production' ? prod : dev
     const { properties } = useWidgetContext()
     const { query } = useNavigation()
     const { themeName } = useTheme()
     const [queryParams, setQueryParams] = useState('')
-    const url = 'http://localhost:3000/view/' + query.widgetName + '?theme=' + themeName + '&' + queryParams
+    const url = enviroment + query.widgetName + '?theme=' + themeName + '&' + queryParams
     const [copyURL, setCopyURL] = useState({
         text: 'Copy Embed URL',
         copied: false
