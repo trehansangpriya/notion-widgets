@@ -1,0 +1,16 @@
+{
+    "compilerOptions": {
+      "baseUrl": ".",
+      "paths": {
+        "@/PageComponent/*": ["src/components/pages/*"],
+        "@/SharedComponent/*": ["src/components/shared/*"],
+        "@/UtilsComponent/*": ["src/components/utils/*"],
+        "@/Widgets/*": ["src/components/widgets/*"],
+        "@/EditOptions/*": ["src/components/editOptions/*"],
+        "@/Data/*": ["src/data/*"],
+        "@/Functions/*": ["src/functions/*"],
+        "@/Hooks/*": ["src/hooks/*"],
+        "@/Context/*": ["src/context/*"],
+    }
+    }
+  }
